@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="sricpt.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main_cont">
+        <h2>Translator</h2>
+        <div class="inner_cont">
+            <div class="original">
+                <div class="text" style="width: 100%;">
+                    <h6>From :</h6>
+                    <select id="sele1">
+                        <option value="en-GB" selected>English</option>
+                        <option value="ta-LK">Tamil</option>
+                    </select>
+                </div>
+                <div class="text">
+                    <h6>Your Text :</h6>
+                    <Textarea rows="8" placeholder="Enter the Text" id="from-text">
+                    </Textarea>
+                </div>
+            </div>
+            <div class="translated">
+                <div class="text" style="width: 100%;">
+                    <h6>To :</h6>
+                    <select id="sele2">
+                        <option value="en-GB">English</option>
+                        <option value="ta-LK" selected>Tamil</option>
+                    </select>
+                </div>
+                <div class="text">
+                    <h6>Translated Text:</h6>
+                    <Textarea rows="8" placeholder="Translate" id="to-text">
+                    </Textarea>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_view">
+            <div class="text" style="width: 100%;">
+                <h6>From :</h6>
+                <select id="sele1">
+                    <option value="en-GB" selected>English</option>
+                    <option value="ta-LK">Tamil</option>
+                </select>
+            </div>
+            <div style="margin: 10px;"></div>
+            <div class="text" style="width: 100%;">
+                <h6>To :</h6>
+                <select id="sele2">
+                    <option value="en-GB">English</option>
+                    <option value="ta-LK" selected>Tamil</option>
+                </select>
+            </div>
+            <div style="margin: 10px;"></div>
+            <div class="text">
+                <h6>Your Text :</h6>
+                <Textarea rows="4" placeholder="Enter the Text" id="from-text">
+                                </Textarea>
+            </div>
+            <div style="margin: 10px;"></div>
+            <div class="text">
+                <h6>Translated Text:</h6>
+                <Textarea rows="4" placeholder="Translate" id="to-text">
+                                </Textarea>
+            </div>
+        </div>
+        <button class="btn" onclick="trans()">Translate Text</button>
+    </div>
+</body>
+</html>
